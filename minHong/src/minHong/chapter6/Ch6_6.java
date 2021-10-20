@@ -8,7 +8,7 @@ public class Ch6_6 {
 							// 이때 멤버 변수는 각 자료형에 해당하는 기본값으로 초기화
 		t.channel = 7;		// t에 저장된 주소에 있는 인스턴스의 멤버변수 channel에 7저장
 		t.channelDown();	// 인스턴스의 멤버변수 channel의 값을 1감소시킴
-		System.out.println("���� ä���� " + t.channel + "�� �Դϴ�.");
+		System.out.println("현재 채널은 " + t.channel + "번 입니다.");
 	}
 
 }
