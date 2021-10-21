@@ -1,4 +1,4 @@
-package minHong.chapter6;
+package minHong.chapter6.ex;
 
 public class Ch6_12 {
 
