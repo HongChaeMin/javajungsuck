@@ -11,8 +11,7 @@ class MyTv {
 	final int MIN_CHANNEL = 1;
 	
 	void turnInOff() {
-		if (this.isPowerOn) {this.isPowerOn = false;}
-		else {this.isPowerOn = true; }
+		this.isPowerOn = !this.isPowerOn;
 	}
 	
 	void volumeUp() {
@@ -24,11 +23,13 @@ class MyTv {
 	}
 	
 	void channelUp() {
-		if (this.channel < MAX_CHANNEL) {this.channel++; }
+		if (this.channel == MAX_CHANNEL) {this.channel = MIN_CHANNEL; }
+		else {this.channel++; }
 	}
 	
 	void channelDown() {
-		if (this.channel > MIN_CHANNEL) {this.channel--; }
+		if (this.channel == MIN_CHANNEL) {this.channel = MAX_CHANNEL; }
+		else {this.channel--; }
 	}
 	
 }
