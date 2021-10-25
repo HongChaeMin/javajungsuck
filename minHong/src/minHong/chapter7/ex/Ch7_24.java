@@ -8,6 +8,13 @@ public class Ch7_24 {
 		// FireEngine f = (FireEngine) c; // 형변환 실행 애러 java.lang.ClassCastException
 		// f.water(); // 컴파일 에러 : c는 water를 모름 그런데 받았기 때문에 오류가 나는 거임
 		
+		// 형변환이 가능한지 ? true : false 
+		if (c instanceof FireEngine) { // 실행 X
+			FireEngine f = (FireEngine)  c;
+			f.water();
+		}
+		
+		
 		Car car = null;
 		FireEngine fe = new FireEngine(); // 실제 인스턴스가 무엇진지가 중요
 		FireEngine fe2 = null;
