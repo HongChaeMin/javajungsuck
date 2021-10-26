@@ -15,6 +15,7 @@ class Product {
 
 class Tv extends Product {
 	/* 부모생성자를 호출 안해서 에러나는 것 반드시 호출 해주어야함
+	 * 아니면 디폴트 생성자 만들어줘야함
 	 * Tv() {
 	 * 
 	 * }
