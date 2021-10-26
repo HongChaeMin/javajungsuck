@@ -5,8 +5,9 @@ class SutdaDeck {
 	SutdaCard[] cards = new SutdaCard[CARD_NUM];
 
 	SutdaDeck() {
-		for (SutdaCard s : cards) {
-			
+		for (int i = 1; i <= CARD_NUM; i++) {
+			if (i == 1 || i == 3 || i == 8) cards[i - 1] = new SutdaCard(i, true);
+			else cards[i - 1] = i > 10 ? new SutdaCard(i - 10, false) : new SutdaCard(i, false);
 		}
 	}
 
