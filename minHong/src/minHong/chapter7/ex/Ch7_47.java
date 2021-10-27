@@ -1,5 +1,6 @@
 package minHong.chapter7.ex;
 
+// 인스턴스 멤버와 static 멤버간의 참조와 같다
 public class Ch7_47 {
 	class InstanceInner {}
 	static class StaticInner {}
