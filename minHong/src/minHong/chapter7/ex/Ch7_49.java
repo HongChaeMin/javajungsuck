@@ -27,11 +27,11 @@ public class Ch7_49 {
 		Outer.InstanceInner ii = oc.new InstanceInner();
 		
 		System.out.println("ii.iv : " + ii.iv);
-		System.out.println("Outer");
+		System.out.println("Outer.StaticInner.cv : " + Outer.StaticInner.cv);
 		
 		// 스태틱 내부 클래스의 인스턴스는 외부 클래스를 먼저 생성하지 않아도 된다
-		Outer.StaticInner st = new Outer.StaticInner();
-		System.out.println("si.");
+		Outer.StaticInner si = new Outer.StaticInner();
+		System.out.println("si.iv : " + si.iv);
 	}
 
 }

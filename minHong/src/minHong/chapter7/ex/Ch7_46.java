@@ -4,7 +4,7 @@ public class Ch7_46 {
 
 	class InstanceInner {
 		int iv = 100;
-		static int cv = 100;
+		// static int cv = 100;
 		final static int CONST = 100;
 	}
 	
@@ -16,7 +16,7 @@ public class Ch7_46 {
 	void myMethod() {
 		class LocalInner {
 			int iv = 300;
-			static int cv = 100;
+			// static int cv = 100;
 			final static int CONST = 300;
 		}
 	}
